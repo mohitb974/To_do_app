@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <header class="app-header">
+            <h1>ToDo App</h1>
+            <p class="subtitle">Organize your tasks — simple & focused</p>
+        </header>
+
+        <section class="create-task card">
+            <div class="toDoGrid">
+                <input id="to-do-input" type="text" placeholder="Enter Any Task" aria-label="Task">
+                <input type="date" id="to-do-date" aria-label="Due date">
+                <button id="sub-but" onclick="toDoFun()" class="btn primary">Add Task</button>
+            </div>
+        </section>
+
+        <section class="tasks card">
+            <div class="tasks-header">
+                <h2>Tasks</h2>
+                <p class="muted" id="empty-state">No tasks yet. Add your first task!</p>
+            </div>
+
+            <div id="toDoDisplay" class="toDoGrid toDoList"></div>
+        </section>
+
+        <footer class="app-footer muted">Tip: Use the buttons beside tasks to manage them.</footer>
+    </div>
+
+    <script src="first.js"></script>
+</body>
+
+</html>
